@@ -41,8 +41,8 @@ end = (begin + timedelta(days=int(2*popt[1]))).strftime('%m-%d-%Y')
 plt.title('Today\'s date: '+today+'\nInflection point: '+inflection+'\nEstimated end: '+end)
 
 # saving plot
-if not os.path.exists('output/regression/img/'+today+'.png'):
-    plt.savefig('output/regression/img/'+today+'.png', dpi=1000)
+# if not os.path.exists('output/regression/img/'+today+'.png'):
+plt.savefig('output/regression/img/'+today+'.png', dpi=200)
 
 # appending data to .csv if not already appended
 with open('output/regression/regression_history.csv', 'r', newline='') as file:

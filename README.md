@@ -10,6 +10,6 @@ Data is pulled daily from [Johns Hopkins University Center for Systems Science a
 
 ## Results
 
-<img src="/output/regression/img/03-27-2020.png" height="500" width="500px" />
+<img src="/output/regression/img/03-27-2020.png" height="500" width="700px" />
 
-<img src="/output/end_estimation/03-27-2020.png" height="500" width="500px" />
+<img src="/output/end_estimation/03-27-2020.png" height="500" width="700px" />

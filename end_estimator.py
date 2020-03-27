@@ -22,7 +22,9 @@ w_mean = 0
 for index in range(len(ydata_mean)):
     w_mean += ydata_mean[index]*(index+1)/w_sum
 
+
 end_date = (beginning + timedelta(days=int(w_mean))).strftime('%m-%d-%Y')
-plt.title('Estimated end using previous results: '+end_date)
+print(end_date)
+plt.title('History of estimations')
 plt.savefig('output/end_estimation/'+today+'.png', dpi=200)
 plt.show()

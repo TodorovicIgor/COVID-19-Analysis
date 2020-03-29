@@ -1,0 +1,10 @@
+*.iml
+.idea
+.idea/.gitignore
+.idea/.name
+.idea/inspectionProfiles/
+.idea/misc.xml
+.idea/modules.xml
+.idea/rSettings.xml
+.idea/vcs.xml
+time_series_covid19_confirmed_global.csv

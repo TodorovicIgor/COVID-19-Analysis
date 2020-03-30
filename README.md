@@ -2,7 +2,7 @@
 
 ## Intro
 
-This is repository containing simple python scripts used to fit logistic curve to cumulative confirmed Coronavirus cases.
+This repository contains simple python scripts used to fit logistic curve to cumulative confirmed Coronavirus cases.
 
 ## Data
 
@@ -13,12 +13,12 @@ ignoring data from China since their curve is skewed by a whole month, making it
 ## Results
 Current data looks like this:
 
-<img src="/output/regression/img/03-28-2020.png" height="500" width="700px" />
+<img src="/output/regression/img/03-29-2020.png" height="500" width="700px" />
 
 Note: As more daily data arrives, the better estimation will be, since this is ongoing pandemic.\
 That's why there is second graph, showing history of these estimations:
 
-<img src="/output/end_estimation/03-28-2020.png" height="500" width="700px" />\
+<img src="/output/end_estimation/03-29-2020.png" height="500" width="700px" />\
 This plot should converge to specific value, marking the end of the pandemic.\
-**As of 28. March 2020. estimated end of pandemic is 12. June 2020.**
+**As of 29. March 2020. estimated end of pandemic is 13. June 2020.**
  

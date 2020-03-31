@@ -20,5 +20,5 @@ That's why there is second graph, showing history of these estimations:
 
 <img src="/output/end_estimation/03-29-2020.png" height="500" width="700px" />\
 This plot should converge to specific value, marking the end of the pandemic.\
-**As of 29. March 2020. estimated end of pandemic is 13. June 2020.**
+**As of 31. March 2020. estimated end of pandemic is 11. June 2020.**
  

@@ -3,7 +3,6 @@ import csv
 import numpy as np
 from scipy.optimize import curve_fit
 from datetime import datetime, timedelta
-import os
 
 
 def logistic_model(x, a, b, c):
@@ -41,7 +40,6 @@ end = (begin + timedelta(days=int(2*popt[1]))).strftime('%m-%d-%Y')
 plt.title('Today\'s date: '+today+'\nInflection point: '+inflection+'\nEstimated end: '+end)
 
 # saving plot
-# if not os.path.exists('output/regression/img/'+today+'.png'):
 plt.savefig('output/regression/img/'+today+'.png', dpi=200)
 
 # appending data to .csv if not already appended

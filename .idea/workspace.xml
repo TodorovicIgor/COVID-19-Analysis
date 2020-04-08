@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4780fc20-385c-4cc8-9804-316a41ac5714" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/regression/regression_history.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/regression/regression_history.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/time_series_covid19_confirmed_global.csv" beforeDir="false" afterPath="$PROJECT_DIR$/time_series_covid19_confirmed_global.csv" afterDir="false" />
     </list>
     <list id="a79cad84-f8b8-4e75-a3f9-b6bccb4ebb49" name="Revert &quot;daily update&quot;" comment="Revert &quot;daily update&quot;&#10;&#10;This reverts commit b7e09cde" />
@@ -305,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586164856388</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="daily update">
+      <created>1586239165157</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1586239165157</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -403,10 +412,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1584729260494" />
-    <state x="376" y="0" key="CommitChangelistDialog2" timestamp="1586164854864">
+    <state x="376" y="0" key="CommitChangelistDialog2" timestamp="1586239164479">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="376" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586164854864" />
+    <state x="376" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586239164479" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1585548294642">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -415,22 +424,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1585910072788" />
-    <state width="1515" height="198" key="GridCell.Tab.0.bottom" timestamp="1586239036788">
+    <state width="1515" height="198" key="GridCell.Tab.0.bottom" timestamp="1586329242745">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="198" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586239036788" />
-    <state width="1515" height="198" key="GridCell.Tab.0.center" timestamp="1586239036788">
+    <state width="1515" height="198" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586329242745" />
+    <state width="1515" height="198" key="GridCell.Tab.0.center" timestamp="1586329242744">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="198" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586239036788" />
-    <state width="1515" height="198" key="GridCell.Tab.0.left" timestamp="1586239036788">
+    <state width="1515" height="198" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586329242744" />
+    <state width="1515" height="198" key="GridCell.Tab.0.left" timestamp="1586329242744">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="198" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586239036788" />
-    <state width="1515" height="198" key="GridCell.Tab.0.right" timestamp="1586239036788">
+    <state width="1515" height="198" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586329242744" />
+    <state width="1515" height="198" key="GridCell.Tab.0.right" timestamp="1586329242745">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="198" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586239036788" />
+    <state width="1515" height="198" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586329242745" />
     <state x="481" y="129" key="MultipleFileMergeDialog" timestamp="1585549822631">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -451,10 +460,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="527" y="118" key="VCS.ChangeListViewerDialog/0.0.1536.824@0.0.1536.824" timestamp="1585547770775" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1586164858641">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1586239168378">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586164858641" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586239168378" />
     <state x="500" y="147" key="VcsDiffUtil.ChangesDialog" timestamp="1585548413912">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

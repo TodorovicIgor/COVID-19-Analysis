@@ -70,5 +70,5 @@ if new_day:
 # plt.clf()
 
 popt2, pcov2 = curve_fit(gompertz_model, xdata, ydata, maxfev=5000)
-plt.plot(gompertz_model(xdata_prediction, *popt2), 'g--')
+# plt.plot(gompertz_model(xdata_prediction, *popt2), 'g--')
 plt.show()

@@ -15,6 +15,7 @@ with open('output/regression/regression_history.csv', 'r') as file:
 plt.scatter(xdata, ydata)
 plt.xlabel('Days passed since 22. January')
 plt.ylabel('Days from 22. January until the end of the pandemic')
+
 # weighted mean for the last 5 days
 ydata_mean = ydata[-5:]
 w_sum = len(ydata_mean)*(len(ydata_mean)+1)/2

@@ -31,23 +31,27 @@ with open('time_series_covid19_confirmed_global.csv', 'r') as file:
             ydata[index-4] += int(row[index])
 
 popt, pcov = curve_fit(logistic_model, xdata, ydata, maxfev=5000)
-xdata_prediction = [i for i in range(int(2*popt[1]))]  # logistic
-# xdata_prediction = [i for i in range(250)]  # gompertz
+xdata_prediction = [i for i in range(int(2*popt[1])+20)]  # logistic
 
-# plt.plot(gompertz_model(xdata_prediction, *popt2), 'g--')
-plt.plot(logistic_model(xdata_prediction, *popt), 'r--')
-plt.plot(ydata, 'b')
-plt.legend(['Forecast', 'Actual'], loc='upper left')
+begin = datetime(2020, 1, 22)
+
+popt2, pcov2 = curve_fit(gompertz_model, xdata, ydata, maxfev=5000)
 plt.xlabel('Days since 22. January')
 plt.ylabel('Total cases')
-begin = datetime(2020, 1, 22)
-inflection = (begin + timedelta(days=int(popt[1]))).strftime('%m-%d-%Y')
-end = (begin + timedelta(days=int(2*popt[1]))).strftime('%m-%d-%Y')
-plt.title('Today\'s date: '+today+'\nInflection point: '+inflection+'\nEstimated end: '+end)
+gompertz_xdata = []
+for i in range(80, 1000):
+    if (gompertz_model(i, *popt2) - gompertz_model(i-1, *popt2))/gompertz_model(i, *popt2) < 0.001:
+        gompertz_xdata = [j for j in range(i)]
+        end = (begin + timedelta(days=i)).strftime('%m-%d-%Y')
+        break
+plt.plot(logistic_model(gompertz_xdata, *popt), 'r--')
+plt.plot(gompertz_model(gompertz_xdata, *popt2), 'g--')
+plt.title('Today\'s date: '+today+'\nEstimated end: '+end)
+plt.plot(ydata, 'b')
+plt.legend(['Logisctic Forecast', 'Gompertz Forecast', 'Actual'], loc='upper left')
 
 # saving plot
 plt.savefig('output/regression/img/'+today+'.png', dpi=200)
-
 # appending data to .csv if not already appended
 with open('output/regression/regression_history.csv', 'r', newline='') as file:
     reader = csv.reader(file)
@@ -59,16 +63,10 @@ with open('output/regression/regression_history.csv', 'r', newline='') as file:
 if new_day:
     with open('output/regression/regression_history.csv', 'a', newline='') as file:
         writer = csv.writer(file, delimiter=',')
-        row = [today, days_since_beginning, inflection, int(popt[1]), end, int(2*popt[1]), int(popt[2])]
+
+        row = [today, days_since_beginning, '-', '-', end, i, int(popt2[0])]
         # scientific notation messes everything up, solution is to traverse ydata array, apparently astype doesn't work
         for item in ydata:
             row.append(int(item))
         writer.writerow(row)
-
-
-# plt.show()
-# plt.clf()
-
-popt2, pcov2 = curve_fit(gompertz_model, xdata, ydata, maxfev=5000)
-plt.plot(gompertz_model(xdata_prediction, *popt2), 'g--')
 plt.show()

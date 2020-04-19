@@ -13,12 +13,12 @@ ignoring data from China since their curve is skewed by a whole month, making it
 ## Results
 Current data looks like this:
 
-<img src="/output/regression/img/04-18-2020.png" height="500" width="700px" />
+<img src="/output/regression/img/04-19-2020.png" height="500" width="700px" />
 
 Note: As more daily data arrives, the better estimation will be, since this is ongoing pandemic.\
 That's why there is second graph, showing history of these estimations:
 
-<img src="/output/end_estimation/04-18-2020.png" height="500" width="700px" />\
+<img src="/output/end_estimation/04-19-2020.png" height="500" width="700px" />\
 This plot should converge to specific value, marking the end of the pandemic.\
-**As of 18. April 2020. estimated end of pandemic is 24. June 2020.**
+**As of 19. April 2020. estimated end of pandemic is 24. June 2020.**
  

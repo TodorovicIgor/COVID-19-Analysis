@@ -44,11 +44,11 @@ for i in range(80, 1000):
         gompertz_xdata = [j for j in range(i)]
         end = (begin + timedelta(days=i)).strftime('%m-%d-%Y')
         break
-plt.plot(logistic_model(gompertz_xdata, *popt), 'r--')
+# plt.plot(logistic_model(gompertz_xdata, *popt), 'r--')
 plt.plot(gompertz_model(gompertz_xdata, *popt2), 'g--')
 plt.title('Today\'s date: '+today+'\nEstimated end: '+end)
 plt.plot(ydata, 'b')
-plt.legend(['Logisctic Forecast', 'Gompertz Forecast', 'Actual'], loc='upper left')
+plt.legend(['Gompertz Forecast', 'Actual'], loc='upper left')
 
 # saving plot
 plt.savefig('output/regression/img/'+today+'.png', dpi=200)
